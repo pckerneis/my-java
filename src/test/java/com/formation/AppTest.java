@@ -13,17 +13,20 @@ public class AppTest {
 	
 	@Test
 	public void testLength() {
+		System.out.println("testLength");
 		assertEquals(64, App.sha256(INPUT).length());
 	}
 	
 	@Test
 	public void testHex() {
+		System.out.println("testHex");
 		String expected = "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5";
 		assertEquals(expected, App.sha256(INPUT));
 	}
 	
 	@Test
 	public void testSuperieur() {
+		System.out.println("testSuperieur");
 		assertEquals("Bye", App.f(20));
 	}
 
